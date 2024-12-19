@@ -1,12 +1,12 @@
 package main
-
-import (
-	"context"
-
-	"gitlab.plaso.cn/module-go/common"
-)
+import ("gitlab.plaso.cn/module-go/demo/gen")
 
 func main() {
-	common.InitLogger()
-	common.Info(context.Background(), "Hello, World!")
+	wg:=gen.Run(gen.Config{
+		Cors: true,
+		Addr: ":8080",
+		ServerName: "servlet",
+	})
+	wg.Wait()
 }
+	
