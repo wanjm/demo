@@ -7,5 +7,6 @@ import (
 )
 
 func main() {
+	common.InitLogger()
 	common.Info(context.Background(), "Hello, World!")
 }
