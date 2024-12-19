@@ -11,10 +11,10 @@ import (
 type Service struct {
 }
 type Request struct {
-	Name string
+	Name string `json:"name"` //名字
 }
 type Response struct {
-	Hello string
+	Hello string `json:"hello"` //Hello提示语
 }
 
 // @goservlet url="/hello"; title="HelloWorld";
