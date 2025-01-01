@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"gitlab.plaso.cn/module-go/demo/basic"
+	"github.com/wanjm/demo/basic"
 )
 
 // @goservlet servlet
